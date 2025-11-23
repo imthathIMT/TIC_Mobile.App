@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import { signInWithEmailAndPassword } from '@firebase/auth';
 import auth from '../services/firebaseAuth';
-import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../types/navigation';
+import React from 'react';
 
 
 

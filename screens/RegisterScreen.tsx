@@ -3,7 +3,7 @@ import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'rea
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from '../services/firebaseAuth';
 import { RootStackParamList } from '../types/navigation';
-import { StackNavigationProp } from '@react-navigation/stack';
+import React from 'react';
 
 
 

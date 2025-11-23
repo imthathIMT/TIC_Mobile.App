@@ -7,6 +7,8 @@ import { RootStackParamList } from './types/navigation';
 import RegisterScreen from './screens/RegisterScreen';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LogingScreen';
+import ProductScreen from './screens/Product';
+import React from 'react';
 
 // Typed stack navigator for type safety
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -33,6 +35,18 @@ export default function App() {
           component={HomeScreen}
           options={{
             title: 'Home',
+            headerStyle: { backgroundColor: '#6200EE' },
+            headerTintColor: '#fff',
+            headerTitleStyle: { fontWeight: 'bold' },
+          }}
+        />
+
+        {/* Product screen */}
+        <Stack.Screen
+          name="Product"
+          component={ProductScreen}
+          options={{
+            title: 'Products',
             headerStyle: { backgroundColor: '#6200EE' },
             headerTintColor: '#fff',
             headerTitleStyle: { fontWeight: 'bold' },
