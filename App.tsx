@@ -8,6 +8,7 @@ import RegisterScreen from './screens/RegisterScreen';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LogingScreen';
 import ProductScreen from './screens/Product';
+import AddProductScreen from './screens/AddProduct';
 import React from 'react';
 
 // Typed stack navigator for type safety
@@ -47,6 +48,18 @@ export default function App() {
           component={ProductScreen}
           options={{
             title: 'Products',
+            headerStyle: { backgroundColor: '#6200EE' },
+            headerTintColor: '#fff',
+            headerTitleStyle: { fontWeight: 'bold' },
+          }}
+        />
+
+        {/* Add Product screen */}
+        <Stack.Screen
+          name="AddProduct"
+          component={AddProductScreen}
+          options={{
+            title: 'Add Product',
             headerStyle: { backgroundColor: '#6200EE' },
             headerTintColor: '#fff',
             headerTitleStyle: { fontWeight: 'bold' },

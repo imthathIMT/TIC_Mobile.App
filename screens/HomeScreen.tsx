@@ -24,6 +24,15 @@ export default function HomeScreen({ navigation }: Props) {
                     <Text style={styles.buttonText}>View Products</Text>
                     <Text style={styles.buttonIcon}>→</Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.addProductButton}
+                    onPress={() => navigation.navigate('AddProduct')}
+                    activeOpacity={0.8}
+                >
+                    <Text style={styles.addButtonIcon}>+</Text>
+                    <Text style={styles.buttonText}>Add Product</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -78,5 +87,27 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 20,
         fontWeight: 'bold',
+    },
+    addProductButton: {
+        backgroundColor: '#03DAC6',
+        paddingHorizontal: 32,
+        paddingVertical: 16,
+        borderRadius: 30,
+        flexDirection: 'row',
+        alignItems: 'center',
+        shadowColor: '#03DAC6',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
+        elevation: 5,
+        minWidth: 200,
+        justifyContent: 'center',
+        marginTop: 16,
+    },
+    addButtonIcon: {
+        color: '#fff',
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginRight: 8,
     },
 });
